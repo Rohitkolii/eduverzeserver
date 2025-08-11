@@ -8,8 +8,9 @@ const courseSchema = new mongoose.Schema({
     course_price: {type: String, required:true},
     course_publisher: {type: String, required:true},
     course_duration: {type: String, required:true},
-    course_rating: {type: String, required:true},
+    course_rating: {type: String, default: null},
     course_discount: {type: String, required:true},
+    course_points: {type: Array},
 },
 {
   timestamps: true
